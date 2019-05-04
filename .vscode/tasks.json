@@ -1,0 +1,15 @@
+{
+    "tasks": [
+        {
+            "label": "build clang++",
+            "type": "shell",
+            "command": "clang++",
+            "args": ["-std=c++17", "-I", "/usr/local/Cellarboost/1.68.0_1", "-g", "${fileDirname}/*.cpp", "-o", "${fileDirname}/a.out"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
