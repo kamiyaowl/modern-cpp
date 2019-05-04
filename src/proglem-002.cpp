@@ -4,14 +4,17 @@
 namespace mp = boost::multiprecision;
 using namespace std;
 
-void solve(mp::cpp_int a, mp::cpp_int b) {
+template<typename T>
+T solve(T a, T b) {
     auto result = boost::math::gcd(a, b);
-    cout << result << endl;
+    return result;
 }
 
 int main(void){
     mp::cpp_int a,b;
     cin >> a >> b;
+    auto result = solve(a,b);
+    cout << result << endl;
     
     return 0;
 }
