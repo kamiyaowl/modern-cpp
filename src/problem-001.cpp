@@ -1,7 +1,5 @@
 #include <iostream>
-#include <boost/multiprecision/cpp_int.hpp>
 
-namespace mp = boost::multiprecision;
 using namespace std;
 
 template<typename T>
@@ -15,7 +13,7 @@ T solve(T n) {
     return sum;
 }
 int main(void){
-    mp::cpp_int n;
+    int n;
     cin >> n;
     auto result = solve(n + 1); // 上限までの
     cout << result << endl;
