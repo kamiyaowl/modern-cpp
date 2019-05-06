@@ -17,7 +17,7 @@ T solve(T n) {
 int main(void){
     mp::cpp_int n;
     cin >> n;
-    auto result = solve(n);
+    auto result = solve(n + 1); // 上限までの
     cout << result << endl;
     
     return 0;

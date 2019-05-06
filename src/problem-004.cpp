@@ -24,7 +24,7 @@ int main(void){
     // もうめんどいのでcpp_int使うのやめた、問題の書き方が悪い
     int n;
     cin >> n;
-    auto result = solve(n);
+    auto result = solve(n); // 与えられた正の整数より小さい
     cout << result << endl;
     return 0;
 }

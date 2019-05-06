@@ -21,9 +21,8 @@ void solve(int n) {
 }
 
 int main(void){
-    // もうめんどいのでcpp_int使うのやめた、問題の書き方が悪い
     int n;
     cin >> n;
-    solve(n);
+    solve(n + 1); // 上限までの
     return 0;
 }
