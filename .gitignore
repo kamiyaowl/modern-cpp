@@ -2,3 +2,7 @@
 *.out
 *.out.dSYM
 *.log
+**/CMakeFiles
+**/*/cmake_install.cmake
+**/*/CmakeCache.txt
+**/*/Makefile
